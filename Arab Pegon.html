@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Arab Pegon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Papan tik Arab Pegon">
+<meta name="Keywords" content="arabic,keyboard,alphabet,letter,character">
+<meta property="og:image" content="https://www.mtsnuitb.sch.id.jpg">
+<style>
+.bt, .bt:hover, .bt:visited {text-decoration:none; cursor:pointer; padding:0.1em 0.25em; min-width:1.4em; font-size:1.7em; color:#CC0033; font-family:Times New Roman; }
+.btb, .btb:hover, .btb:visited {text-decoration:none; cursor:pointer; padding:0.1em 0em; min-width:1.2em; font-size:1.7em; color:#CC0033; font-family:Times New Roman; }
+.cadr {width:80%; font-size:1.8em; color:#0000FF; font-family:Noto Naskh Arabic, Times New Roman;  direction:rtl;  padding:0.3em;  }
+.tabl tr { vertical-align:top; }
+.tabl td { padding-left:1em;  white-space: nowrap; }
+</style>
+<link href="ArabPegon_files/style.css" rel="stylesheet" type="text/css">
+<script async="" src="ArabPegon_files/analytics.js"></script><script src="ArabPegon_files/base.js"></script>
+<script src="ArabPegon_files/carar.js"></script>
+<script src="ArabPegon_files/clipboard.js"></script>
+<script src="ArabPegon_files/savef.js"></script>
+
+</head>
+<body onload="conversion.saisie.focus()">
+<div class="esp"></div>
+<div class="center"> 
+<form>
+<select name="select" onchange="window.location=this.options[this.selectedIndex].value">
+<option value="arabic.htm">Arab Pegon</option>
+</select>
+</form>
+<noscript>
+<span class="span-red">Maaf! Silakan perikasa JavaScript.</span><br>
+You must enable JavaScript in your web browser: see the <a class="ext" href="https://www.enable-javascript.com/" target="_blank">instructions</a>.<br><br>
+</noscript>
+<br>
+<form name="conversion">
+<div class="delc"> 
+<br>
+<input type="button" class="eff" title="clear" onclick="reset();conversion.saisie.focus()" value="">
+</div>
+<textarea name="saisie" id="bar" onkeyup="transcrire()" rows="4" class="cadr"></textarea>
+<br>
+<br>
+<input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
+<script>
+var clipboard = new Clipboard('.bf');
+clipboard.on('success', function(e) {
+console.log(e); 
+});
+clipboard.on('error', function(e) {
+console.log(e);
+});
+</script>
+<input type="button" class="bf" onclick="save()" value="simpan">
+<input type="button" class="bf" onclick="alpha(' ')" value="spasi"><input type="button" class="bf" onclick="conversion.saisie.rows=4;conversion.saisie.focus()" value="bingkai kecil"><input type="button" class="bf" onclick="conversion.saisie.rows=40;conversion.saisie.focus()" value="bingkai besar">
+<div class="espc"></div>
+<div class="rtl">
+<div class="as">a<p><input type="button" class="bt" onclick="alpha('ا')" value="ا"></p></div>
+<div class="as">b<p><input type="button" class="bt" onclick="alpha('ب')" value="ب"></p></div>
+<div class="as">t<p><input type="button" class="bt" onclick="alpha('ت')" value="ت"></p></div>
+<div class="as">'t<p><input type="button" class="bt" onclick="alpha('ث')" value="ث"></p></div>
+<div class="as">j<p><input type="button" class="bt" onclick="alpha('ج')" value="ج"></p></div>
+<div class="as">c<p><input type="button" class="bt" onclick="alpha('چ')" value="چ"></p></div>
+<div class="as">Ḥ<p><input type="button" class="bt" onclick="alpha('ح')" value="ح"></p></div>
+<div class="as">'H<p><input type="button" class="bt" onclick="alpha('خ')" value="خ"></p></div>
+<div class="as">d<p><input type="button" class="bt" onclick="alpha('د')" value="د"></p></div>
+<div class="as">'d<p><input type="button" class="bt" onclick="alpha('ذ')" value="ذ"></p></div>
+<div class="as">''d<p><input type="button" class="bt" onclick="alpha('ڎ')" value="ڎ"></p></div>
+<div class="as">'''d<p><input type="button" class="bt" onclick="alpha('ڊ')" value="ڊ"></p></div>
+<div class="as">r<p><input type="button" class="bt" onclick="alpha('ر')" value="ر"></p></div>
+<div class="as">z<p><input type="button" class="bt" onclick="alpha('ز')" value="ز"></p></div>
+<div class="as">s<p><input type="button" class="bt" onclick="alpha('س')" value="س"></p></div>
+<div class="as">'s<p><input type="button" class="bt" onclick="alpha('ش')" value="ش"></p></div>
+<div class="esp mobnul"></div>
+<div class="as">S<p><input type="button" class="bt" onclick="alpha('ص')" value="ص"></p></div>
+<div class="as">D<p><input type="button" class="bt" onclick="alpha('ض')" value="ض"></p></div>
+<div class="as">T<p><input type="button" class="bt" onclick="alpha('ط')" value="ط"></p></div>
+<div class="as">Z<p><input type="button" class="bt" onclick="alpha('ظ')" value="ظ"></p></div>
+<div class="as">Th<p><input type="button" class="bt" onclick="alpha('‫ڟ‬')" value="‫ڟ‬"></p></div>
+<div class="as">g<p><input type="button" class="bt" onclick="alpha('ع')" value="ع"></p></div>
+<div class="as">'g<p><input type="button" class="bt" onclick="alpha('غ')" value="غ"></p></div>
+<div class="as">''g<p><input type="button" class="bt" onclick="alpha('ڠ')" value="ڠ"></p></div>
+<div class="as">f<p><input type="button" class="bt" onclick="alpha('ف')" value="ف"></p></div>
+<div class="as">q<p><input type="button" class="bt" onclick="alpha('ق')" value="ق"></p></div>
+<div class="as">P<p><input type="button" class="bt" onclick="alpha('ڤ')" value="ڤ"></p></div>
+<div class="as">k<p><input type="button" class="bt" onclick="alpha('ك')" value="ك"></p></div>
+<div class="as">G<p><input type="button" class="bt" onclick="alpha('ڮ')" value="ڮ"></p></div>
+<div class="as">'G<p><input type="button" class="bt" onclick="alpha('ࢴ')" value="ࢴ"></p></div>
+<div class="as">''G<p><input type="button" class="bt" onclick="alpha('ڬ')" value="ڬ"></p></div>
+<div class="as">l<p><input type="button" class="bt" onclick="alpha('ل')" value="ل"></p></div>
+<div class="as">m<p><input type="button" class="bt" onclick="alpha('م')" value="م"></p></div>
+<div class="as">n<p><input type="button" class="bt" onclick="alpha('ن')" value="ن"></p></div>
+<div class="as">h<p><input type="button" class="bt" onclick="alpha('ه')" value="ه"></p></div>
+<div class="as">w<p><input type="button" class="bt" onclick="alpha('و')" value="و"></p></div>
+<div class="as">y<p><input type="button" class="bt" onclick="alpha('ي')" value="ي"></p></div>
+<div class="as">''y<p><input type="button" class="bt" onclick="alpha('ۑ')" value="ۑ"></p></div>
+<div class="as">'''y<p><input type="button" class="bt" onclick="alpha('ڽ')" value="ڽ"></p></div>
+<div class="as">-<p><input type="button" class="bt" onclick="alpha('ء')" value="ء"></p></div>
+</div>
+<div class="esp"></div>
+
+<div class="as"><input type="button" class="bt" onclick="alpha('ى')" value="ى"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('ئ')" value="ئ"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('ؤ')" value="ؤ"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('ة')" value="ة"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('إ')" value="إ"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('أ')" value="أ"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('ٱ')" value="ٱ"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('آ')" value="آ"></div>
+<div class="as"><input type="button" class="btb" title="fathah" onclick="alpha('َ')" value="َ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="fathatain" onclick="alpha('ً')" value="ً&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="dhommah" onclick="alpha('ُ')" value="ُ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="dhommatain" onclick="alpha('ٌ')" value="ٌ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="tasydid" onclick="alpha('ّ')" value="ّ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="sukūn" onclick="alpha('ْ')" value="ْ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="kasroh" onclick="alpha('ِ')" value="ِ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="karotain" onclick="alpha('ٍ')" value="ٍ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="pepet" onclick="alpha('ࣤ')" value="ࣤ&nbsp;"></div>
+<span class="esps"></span>
+<div class="as"><input type="button" class="btb" title="fathah panjang" onclick="alpha('ٰ')" value="ٰ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="kasroh panjang" onclick="alpha('ٖ')" value="ٖ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="dhommah panjang" onclick="alpha('ٗ')" value="ٗ&nbsp;"></div>
+
+<div class="esp"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('؟')" value="؟"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('!')" value="!"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('؛')" value="؛"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('،')" value="،"></div>
+<div class="as"><input type="button" class="bt" onclick="alpha('.')" value="."></div>
+<div class="as"><input type="button" class="bt" title="tatwil" onclick="alpha('ـ')" value="ـ"></div>
+<div class="esp"></div>
+<div class="as">0<p><input type="button" class="bt" onclick="alpha('٠')" value="٠"></p></div>
+<div class="as">1<p><input type="button" class="bt" onclick="alpha('١')" value="١"></p></div>
+<div class="as">2<p><input type="button" class="bt" onclick="alpha('٢')" value="٢"></p></div>
+<div class="as">3<p><input type="button" class="bt" onclick="alpha('٣')" value="٣"></p></div>
+<div class="as">4<p><input type="button" class="bt" onclick="alpha('٤')" value="٤"></p></div>
+<div class="as">5<p><input type="button" class="bt" onclick="alpha('٥')" value="٥"></p></div>
+<div class="as">6<p><input type="button" class="bt" onclick="alpha('٦')" value="٦"></p></div>
+<div class="as">7<p><input type="button" class="bt" onclick="alpha('٧')" value="٧"></p></div>
+<div class="as">8<p><input type="button" class="bt" onclick="alpha('٨')" value="٨"></p></div>
+<div class="as">9<p><input type="button" class="bt" onclick="alpha('٩')" value="٩"></p></div>
+<div class="as">x<p><input type="button" class="bt" onclick="alpha('x')" value="x"></p></div>
+<div class="as"><p><input type="button" class="bt" title="pemisah ribuan" onclick="alpha('٬')" value="٬"></p></div>
+<div class="as"><p><input type="button" class="bt" title="pemisah desimah" onclick="alpha('٫')" value="٫"></p></div>
+<div class="as"><p><input type="button" class="bt" title="persen" onclick="alpha('٪')" value="٪"></p></div> <br>
+
+</form>
+</div>
+<div class="espb"></div>
+<div class="pa"><b>Petunjuk</b> 
+<p>Anda juga dapat mengetik menggunakan keyboar komputer:</p> 
+<ul>
+<li> Huruf dengan variasi titik dapat dijelajahi dengan tombol apostrop: t',t', H', d', s', S', T', g' </li>
+</ul>
+
+<br>
+ 
+</div>
+
+</body></html>
