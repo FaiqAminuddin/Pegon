@@ -2,7 +2,7 @@
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Keyboard Pegon, modifikasi dari Arabic Keyboard Online LEXILOGOS</title>
+<title>Arab Pegon</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Papan tik Arab Pegon">
 <meta name="Keywords" content="arabic,keyboard,alphabet,letter,character">
@@ -37,13 +37,13 @@ You must enable JavaScript in your web browser: see the <a class="ext" href="htt
 </noscript>
 <br>
 <p>Dimodifikasi dari https://www.lexilogos.com/keyboard/arabic.htm</p>
-<br>
 <form name="conversion">
 <div class="delc"> 
 <br>
 <input type="button" class="eff" title="clear" onclick="reset();conversion.saisie.focus()" value="">
 </div>
 <textarea name="saisie" id="bar" onkeyup="transcrire()" rows="4" class="cadr"></textarea>
+<br>
 <br>
 <input type="button" class="bf" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
 <script>
@@ -79,31 +79,32 @@ console.log(e);
 <div class="as">S<p><input type="button" class="bt" onclick="alpha('ص')" value="ص"></p></div>
 <div class="as">D<p><input type="button" class="bt" onclick="alpha('ض')" value="ض"></p></div>
 <div class="as">T<p><input type="button" class="bt" onclick="alpha('ط')" value="ط"></p></div>
+<div class="as">'T<p><input type="button" class="bt" onclick="alpha('‫ڟ‬')" value="‫ڟ‬"></p></div>
 <div class="as">Z<p><input type="button" class="bt" onclick="alpha('ظ')" value="ظ"></p></div>
-<div class="as">Th<p><input type="button" class="bt" onclick="alpha('‫ڟ‬')" value="‫ڟ‬"></p></div>
 <div class="as">g<p><input type="button" class="bt" onclick="alpha('ع')" value="ع"></p></div>
 <div class="as">'g<p><input type="button" class="bt" onclick="alpha('غ')" value="غ"></p></div>
 <div class="as">''g<p><input type="button" class="bt" onclick="alpha('ڠ')" value="ڠ"></p></div>
 <div class="as">f<p><input type="button" class="bt" onclick="alpha('ف')" value="ف"></p></div>
 <div class="as">q<p><input type="button" class="bt" onclick="alpha('ق')" value="ق"></p></div>
-<div class="as">P<p><input type="button" class="bt" onclick="alpha('ڤ')" value="ڤ"></p></div>
+<div class="as">'q<p><input type="button" class="bt" onclick="alpha('ڤ')" value="ڤ"></p></div>
 <div class="as">k<p><input type="button" class="bt" onclick="alpha('ك')" value="ك"></p></div>
-<div class="as">G<p><input type="button" class="bt" onclick="alpha('ڮ')" value="ڮ"></p></div>
-<div class="as">'G<p><input type="button" class="bt" onclick="alpha('ࢴ')" value="ࢴ"></p></div>
-<div class="as">''G<p><input type="button" class="bt" onclick="alpha('ڬ')" value="ڬ"></p></div>
+<div class="as">'k<p><input type="button" class="bt" onclick="alpha('ڮ')" value="ڮ"></p></div>
+<div class="as">''k<p><input type="button" class="bt" onclick="alpha('ࢴ')" value="ࢴ"></p></div>
+<div class="as">'''k<p><input type="button" class="bt" onclick="alpha('ڬ')" value="ڬ"></p></div>
 <div class="as">l<p><input type="button" class="bt" onclick="alpha('ل')" value="ل"></p></div>
 <div class="as">m<p><input type="button" class="bt" onclick="alpha('م')" value="م"></p></div>
 <div class="as">n<p><input type="button" class="bt" onclick="alpha('ن')" value="ن"></p></div>
+<div class="as">'n<p><input type="button" class="bt" onclick="alpha('ڽ')" value="ڽ"></p></div>
 <div class="as">h<p><input type="button" class="bt" onclick="alpha('ه')" value="ه"></p></div>
 <div class="as">w<p><input type="button" class="bt" onclick="alpha('و')" value="و"></p></div>
-<div class="as">y<p><input type="button" class="bt" onclick="alpha('ي')" value="ي"></p></div>
+<div class="as">y<p><input type="button" class="bt" onclick="alpha('ى')" value="ى"></div>
+<div class="as">'y<p><input type="button" class="bt" onclick="alpha('ي')" value="ي"></p></div>
 <div class="as">''y<p><input type="button" class="bt" onclick="alpha('ۑ')" value="ۑ"></p></div>
-<div class="as">'''y<p><input type="button" class="bt" onclick="alpha('ڽ')" value="ڽ"></p></div>
-<div class="as">-<p><input type="button" class="bt" onclick="alpha('ء')" value="ء"></p></div>
+
 </div>
 <div class="esp"></div>
 
-<div class="as"><input type="button" class="bt" onclick="alpha('ى')" value="ى"></div>
+<div class="as">-<p><input type="button" class="bt" onclick="alpha('ء')" value="ء"></p></div>
 <div class="as"><input type="button" class="bt" onclick="alpha('ئ')" value="ئ"></div>
 <div class="as"><input type="button" class="bt" onclick="alpha('ؤ')" value="ؤ"></div>
 <div class="as"><input type="button" class="bt" onclick="alpha('ة')" value="ة"></div>
@@ -118,9 +119,8 @@ console.log(e);
 <div class="as"><input type="button" class="btb" title="tasydid" onclick="alpha('ّ')" value="ّ&nbsp;"></div>
 <div class="as"><input type="button" class="btb" title="sukūn" onclick="alpha('ْ')" value="ْ&nbsp;"></div>
 <div class="as"><input type="button" class="btb" title="kasroh" onclick="alpha('ِ')" value="ِ&nbsp;"></div>
-<div class="as"><input type="button" class="btb" title="karotain" onclick="alpha('ٍ')" value="ٍ&nbsp;"></div>
+<div class="as"><input type="button" class="btb" title="kasrotain" onclick="alpha('ٍ')" value="ٍ&nbsp;"></div>
 <div class="as"><input type="button" class="btb" title="pepet" onclick="alpha('ࣤ')" value="ࣤ&nbsp;"></div>
-<span class="esps"></span>
 <div class="as"><input type="button" class="btb" title="fathah panjang" onclick="alpha('ٰ')" value="ٰ&nbsp;"></div>
 <div class="as"><input type="button" class="btb" title="kasroh panjang" onclick="alpha('ٖ')" value="ٖ&nbsp;"></div>
 <div class="as"><input type="button" class="btb" title="dhommah panjang" onclick="alpha('ٗ')" value="ٗ&nbsp;"></div>
@@ -145,7 +145,7 @@ console.log(e);
 <div class="as">9<p><input type="button" class="bt" onclick="alpha('٩')" value="٩"></p></div>
 <div class="as">x<p><input type="button" class="bt" onclick="alpha('x')" value="x"></p></div>
 <div class="as"><p><input type="button" class="bt" title="pemisah ribuan" onclick="alpha('٬')" value="٬"></p></div>
-<div class="as"><p><input type="button" class="bt" title="pemisah desimah" onclick="alpha('٫')" value="٫"></p></div>
+<div class="as"><p><input type="button" class="bt" title="pemisah desimal" onclick="alpha('٫')" value="٫"></p></div>
 <div class="as"><p><input type="button" class="bt" title="persen" onclick="alpha('٪')" value="٪"></p></div> <br>
 
 </form>
@@ -154,7 +154,9 @@ console.log(e);
 <div class="pa"><b>Petunjuk</b> 
 <p>Anda juga dapat mengetik menggunakan keyboar komputer:</p> 
 <ul>
-<li> Huruf dengan variasi titik dapat dijelajahi dengan tombol apostrop: t',t', H', d', s', S', T', g' </li>
+<li> Huruf dengan variasi titik dapat dijelajahi dengan tombol apostrop: t', H', d', s', S', T', g', j' </li>
+<li> Unicode Harakat pepet masih dalam proses pengajuan. Sementara kita pakai Arabic curly fatha </li>
+<li> Untuk pengetikan pepet dan angka, lebih disarankan menggunakan virtual keyboard </li>
 </ul>
 
 <br>
